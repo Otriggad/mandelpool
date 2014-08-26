@@ -1,0 +1,37 @@
+Variable names:
+int camelCaseName;
+void* pointerName;
+
+Funktionsnamn:
+void functionName
+
+Functions in modules
+void modulename_functionName;
+
+Structs:
+#WRITE SOMETHING ABOUT TypEDEFS
+pekare med stor bokstav ej pekare utan stor bokstav.
+
+struct structName. 
+struct structName* structVariable.
+struct module_structname structVariable;
+
+Function return values:
+void* returnsPointer
+struct structName* returnsStructPointer
+
+Constants:
+UPPER_CASE
+
+Indenting:
+4 spaces
+
+Brackets on separate rows always.
+
+Spaces around operators and after comma.
+
+End loops with conditions or return.
+
+No commented code in final product.
+
+AStyle for coherent code formatting.
