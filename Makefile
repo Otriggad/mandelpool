@@ -15,7 +15,7 @@ all:	main
 
 main:  mandelbrot.o threadpool.o
 	g++ src/sfml.cpp bin/mandelbrot.o bin/fifo.o bin/threadpool.o bin/colorpalette.o -o bin/mandelpool -ggdb -lsfml-system -lsfml-window -lsfml-graphics -lpthread
-	
+
 start:
 	bin/mandelpool
 
@@ -52,8 +52,8 @@ performance1: threadpool.o
 	$(CC) -Wall -Wextra -Wshadow -Wcast-qual -pedantic -ggdb -std=gnu99 -O0 src/poolvsthread1run.c bin/threadpool.o bin/fifo.o -o bin/performance1 $(LIBS)
 
 # archive
-archive:
-	tar -zcvf mandelpool.tar.gz ../mandelpool/
+archive: clean
+	tar -zcvf ../mandelpool.tar.gz ../mandelpool/ --exclude=.git/* --exclude=.git
 
 # documentation
 doc:
