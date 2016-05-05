@@ -1,23 +1,11 @@
 # Mandelpool
+Mandelpool - visualization and parallelized calculation of the mandelbrot set by implementing a threadpool
 
-**COURSE**
+**COURSE**  
+Course project in Multicore and Process Oriented Programming (1DT049) Spring 2014  
+Department of Information Technology  
+Uppsala university  
 
-Process Oriented Programming (1DT049) Spring 2014
-Department of Information Technology 
-Uppsala university
-
-**GROUP**
-
-20
-
-**PROJECT NAME**
-
-Mandelpool
-
-**PROJECT DESCRIPTION**
-
-The purpose of this project is to create a thread pool which then will be used
-to calculate and  visualize the Mandelbrot set.
 
 **MAY THE SOURCE BE WITH YOU**
 
