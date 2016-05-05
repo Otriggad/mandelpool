@@ -1,38 +1,24 @@
 # Mandelpool
+Mandelpool - visualization and parallelized calculation of the mandelbrot set by implementing a threadpool
 
-==== COURSE ==== 
-
-Process Oriented Programming (1DT049) Spring 2014
-
-Department of Information Technology 
-Uppsala university
-
-
-==== GROUP ==== 
-
-20
+**COURSE**  
+Course project in Multicore and Process Oriented Programming (1DT049) Spring 2014  
+Department of Information Technology  
+Uppsala university  
 
 
-==== PROJECT NAME ==== 
-
-Mandelpool
-
-==== PROJECT DESCRIPTION ==== 
-
-The purpose of this project is to create a thread pool which then will be used
-to calculate and  visualize the Mandelbrot set.
-
-==== MAY THE SOURCE BE WITH YOU ==== 
+**MAY THE SOURCE BE WITH YOU**
 
 To run the GUI SFML libraries needs to be installed.
 On Debian / Ubuntu this can be done with apt-get install libsfml-dev.
 For other operating systems we refer to http://www.sfml-dev.org/download/sfml/2.1/
 
-==== C VERSION ====
+**C VERSION**
 
 This software was developed and tested using gcc version 4.8.2 and G++ version 4.8.2 (Ubuntu 4.8.2-19ubuntu1)
+For OSX see information below.
      	      	  	    	       
-==== MAKE IT HAPPEN ==== 
+**MAKE IT HAPPEN**
 
 Using the make utility you can perform the following actions:
 ```makefile
@@ -48,6 +34,14 @@ make beautify 	==> Makes code formatting coherent with astyle
 
 For performance-tests we refer to the makefile comments.
 
-==== MORE INFORMATION ==== 
+**MORE INFORMATION**
 
 Please read the documentation and the report in the doc/ folder
+
+**Update:** Software has been compiled and made running on OS X (El capitan) with clang++ and SFML for OS X using the following steps:
+```OSX
+make
+make prototype
+clang++ -F /Library/Frameworks  -c src/sfml.cpp bin/mandelbrot.o bin/fifo.o bin/threadpool.o bin/colorpalette.o  -lpthread
+clang++ -F /Library/Frameworks sfml.o bin/mandelbrot.o bin/fifo.o bin/threadpool.o bin/colorpalette.o -o main -lpthread -framework sfml-system -framework sfml-window -framework sfml-graphics -o main
+```
